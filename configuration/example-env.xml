@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration supports_adding_forbidden="true">
+
+  <property>
+    <name>download_location</name>
+    <description>Location to download</description>
+    <value>https://download.location</value>
+  </property>
+
+  <property>
+    <name>install_directory</name>
+    <description>Install directory</description>
+    <value>/opt/ambari-service-example</value>
+  </property>
+
+    <property>
+    <name>java_home</name>
+    <description>Java Home</description>
+    <value>/usr/java/default</value>
+  </property>
+
+</configuration>

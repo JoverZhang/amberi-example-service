@@ -6,7 +6,7 @@
       <name>EXAMPLE</name>
       <displayName>Example</displayName>
       <comment>An example for custom resource service in ambari.</comment>
-      <version>0.0.1</version>
+      <version>EXAMPLE</version>
 
       <components>
         <component>
@@ -19,6 +19,9 @@
             <scriptType>PYTHON</scriptType>
             <timeout>10000</timeout>
           </commandScript>
+          <configuration-dependencies>
+            <config-type>example-env</config-type>
+          </configuration-dependencies>
         </component>
       </components>
 
