@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<metainfo>
+  <schemaVersion>2.0</schemaVersion>
+  <services>
+    <service>
+      <name>EXAMPLE</name>
+      <displayName>Example</displayName>
+      <comment>An example for custom resource service in ambari.</comment>
+      <version>0.0.1</version>
+
+      <components>
+        <component>
+          <name>EXAMPLE_MASTER</name>
+          <displayName>Example</displayName>
+          <category>MASTER</category>
+          <cardinality>1</cardinality>
+          <commandScript>
+            <script>scripts/example.py</script>
+            <scriptType>PYTHON</scriptType>
+            <timeout>10000</timeout>
+          </commandScript>
+        </component>
+      </components>
+
+      <requiredServices/>
+
+      <osSpecifics>
+        <osSpecific>
+          <osFamily>redhat5,redhat6,redhat7</osFamily>
+          <packages>
+            <package>
+              <name>epel-release</name>
+            </package>
+          </packages>
+        </osSpecific>
+      </osSpecifics>
+    </service>
+  </services>
+</metainfo>
