@@ -4,8 +4,6 @@
 
 # Project structure
 
----
-
 [**/configuration**](./configuration) # Place the **Service configuration file**
 
 [/configuration/example-env.xml](./configuration/example-env.xml)

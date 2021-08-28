@@ -3,30 +3,40 @@
   <schemaVersion>2.0</schemaVersion>
   <services>
     <service>
+      <!-- Define the Service intorduction -->
       <name>EXAMPLE</name>
       <displayName>Example</displayName>
       <comment>An example for custom resource service in ambari.</comment>
       <version>EXAMPLE</version>
 
       <components>
+        <!-- Define the Master component -->
         <component>
+          <!-- Define the master component introduction -->
           <name>EXAMPLE_MASTER</name>
           <displayName>Example</displayName>
           <category>MASTER</category>
           <cardinality>1</cardinality>
+
+          <!-- Find in the /package directory -->
           <commandScript>
             <script>scripts/example.py</script>
             <scriptType>PYTHON</scriptType>
             <timeout>10000</timeout>
           </commandScript>
+
+          <!-- Find in the /configuration directory-->
           <configuration-dependencies>
             <config-type>example-env</config-type>
           </configuration-dependencies>
+
         </component>
       </components>
 
+      <!-- Define the required Services -->
       <requiredServices/>
 
+      <!-- Define the OS and lib-->
       <osSpecifics>
         <osSpecific>
           <osFamily>redhat5,redhat6,redhat7</osFamily>
@@ -37,6 +47,7 @@
           </packages>
         </osSpecific>
       </osSpecifics>
+
     </service>
   </services>
 </metainfo>
